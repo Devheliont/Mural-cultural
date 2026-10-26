@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Mural Cultural</title>
+  <link rel="stylesheet" href="exte.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Mural Cultural, início">
+        <span class="brand-mark" aria-hidden="true">MC</span>
+        <span>cultura em comum</span>
+      </a>
+      <span class="edition">MURAL ABERTO</span>
+    </header>
+
+    <section class="intro" id="inicio" aria-labelledby="page-title">
+      <p class="eyebrow">Encontros, ideias e cidade</p>
+      <h1 id="page-title">O que está<br><span>acontecendo?</span></h1>
+      <p class="intro-copy">Compartilhe uma programação, descoberta ou evento cultural com a comunidade.</p>
+    </section>
+
+    <section class="composer" aria-labelledby="composer-title">
+      <div class="section-heading">
+        <span class="section-index">01</span>
+        <h2 id="composer-title">Coloque no mural</h2>
+      </div>
+      <form id="form-mensagem">
+        <label class="sr-only" for="mensagem">Seu evento ou descoberta cultural</label>
+        <textarea id="mensagem" name="mensagem" maxlength="280" placeholder="Uma mostra que vale a visita, um show chegando, uma ideia para o fim de semana..." required></textarea>
+        <div class="composer-footer">
+          <span id="contador" class="character-count">0 / 280</span>
+          <button class="publish-button" type="submit">
+            Publicar <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="board" aria-labelledby="board-title">
+      <div class="section-heading board-heading">
+        <div class="heading-title">
+          <span class="section-index">02</span>
+          <h2 id="board-title">Mural da comunidade</h2>
+        </div>
+        <button class="clear-button" id="limpar-mural" type="button">Limpar mural</button>
+      </div>
+      <p class="board-status" id="status-mural" aria-live="polite"></p>
+      <div id="mural" class="posts" aria-live="polite"></div>
+    </section>
+
+    <footer class="page-footer">
+      <span>Feito para circular cultura.</span>
+      <span>Seu mural, salvo neste dispositivo.</span>
+    </footer>
+  </main>
+  <script src="exte.js"></script>
+</body>
+</html> 
